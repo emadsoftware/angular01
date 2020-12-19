@@ -1,27 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background: rgb(49, 49, 49);
-    color: rgb(223, 223, 223);
+    color: rgb(190, 190, 190);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.25rem;
+    font-weight: 300;
     line-height: 1.2;
-    width: 70%;
+    width: 80%;
     margin: auto;
     word-wrap: break-word;
 }
 
-h1,h2,h3,h4,h5,h6{
-    color: rgb(235, 235, 235);
+h1{
+    color: rgb(190, 190, 190);
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: auto;
+    width: fit-content;
+    padding: .5rem;
+}
+h2,h3,h4,h5,h6{
+    font-size:1.5rem;
 }
 
 .card{
     margin: 1rem;
+    /* padding: 1rem 14rem; */
     padding: 1rem;
     border-radius: 1rem;
 }
 
-app-my-line-chart, app-my-line-chart div, app-my-line-chart div .chartjs-size-monitor {
+app-my-line-chart{
+    display: flex;
+}
+
+app-my-line-chart > div {
     width: 50%;
+}
+canvas.chartjs-render-monitor {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.bg-dark {
+    background-color: rgb(33 37 41 / 25%)!important;
+}
+
+a {
+    color: #6c99db;
 }
 
 @media(max-width: 500px){
