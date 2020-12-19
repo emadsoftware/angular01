@@ -17,7 +17,11 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <h1>Welcome to {{ title }}</h1>
-    <div *ngFor="let item of items"><h2>{{item.data.title}}</h2><p>{{item.data.selftext}}</p></div>
+    <div class="card bg-dark" *ngFor="let item of items">
+      <h3>{{item.data.title}}</h3>
+      <p markdown>{{item.data.selftext == '' ? '[Image/video hidden]' : item.data.selftext}}</p>
+      <p>Upvotes: {{item.data.ups}} Upvote Ratio: {{item.data.upvote_ratio}} Comments: {{item.data.num_comments}}</p>
+    </div>
     <!-- <script src="" async defer></script> -->
   </body>
 </html>

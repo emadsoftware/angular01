@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'site01';
-  url = 'https://www.reddit.com/r/webdev/.json';
+  url = 'https://www.reddit.com/r/webdev/.json?limit=50';
   items = [];
   
   constructor(private http: HttpClient){
