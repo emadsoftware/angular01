@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'site01';
+  url = 'https://www.reddit.com/r/webdev/.json';
+  items = [];
+  
+  constructor(private http: HttpClient){
+    this.http.get(this.url).toPromise().then(data => {
+        console.log(data['data'].children);
+        let innerJson = data['data'].children;
+        for (let key in innerJson)
+          if (innerJson.hasOwnProperty(key))
+            this.items.push(innerJson[key]);
+      });
+  }
 }
