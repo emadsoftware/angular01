@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
+import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { MarkdownModule } from 'ngx-markdown';
 })
 export class AppComponent {
   title = 'Basic Data Visualization App V.1';
-  url = 'https://www.reddit.com/r/webdev/.json?limit=50';
+  url = 'https://www.reddit.com/r/webdev/.json?limit=1';
   items = [];
   
   constructor(private http: HttpClient){

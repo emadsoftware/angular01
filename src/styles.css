@@ -20,6 +20,10 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 1rem;
 }
 
+app-my-line-chart, app-my-line-chart div, app-my-line-chart div .chartjs-size-monitor {
+    width: 50%;
+}
+
 @media(max-width: 500px){
     body{
         width: 100%;
