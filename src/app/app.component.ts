@@ -8,7 +8,7 @@ import { MarkdownModule } from 'ngx-markdown';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'site01';
+  title = 'Basic Data Visualization App V.1';
   url = 'https://www.reddit.com/r/webdev/.json?limit=50';
   items = [];
   

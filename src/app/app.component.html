@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Super Basic Data Visualization App V.1</title>
+    <title>Basic Data Visualization App V.1</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
@@ -16,13 +16,16 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <h1>Welcome to {{ title }}</h1>
-    <div class="card bg-dark" *ngFor="let item of items">
+    <h1>{{ title }}</h1>
+    
+    <div *ngFor="let item of items">
+      <div class="card bg-dark">
       <h3>{{item.data.title}}</h3>
       <p markdown>{{item.data.selftext == '' ? '[Image/video hidden]' : item.data.selftext}}</p>
       <p>Upvotes: {{item.data.ups}} Upvote Ratio: {{item.data.upvote_ratio}} Comments: {{item.data.num_comments}}</p>
-    </div>
+    </div></div>
     <!-- <script src="" async defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
   </body>
 </html>
 
