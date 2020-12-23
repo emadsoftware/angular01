@@ -33,12 +33,12 @@ h2,h3,h4,h5,h6 {
 
 app-my-line-chart, app-my-bar-graph, app-my-doughnut-graph {
     display: inline-block;
-    width: 30%;
+    width: 33%;
+    padding: 1rem;
 }
 
 app-my-line-chart > div, app-my-bar-graph > div, app-my-doughnut-graph > div {
-    display: block;
-    width: 90%;
+    display: block;    
 }
 
 canvas.chartjs-render-monitor {
