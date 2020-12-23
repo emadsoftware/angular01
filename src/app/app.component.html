@@ -17,8 +17,11 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <h1>{{ title }}</h1>   
-   <router-outlet></router-outlet>
-     
+    <div class="graph-containers">
+      <router-outlet></router-outlet>
+      <router-outlet name='secondary'></router-outlet>
+      <router-outlet name='tertiary'></router-outlet>
+    </div>
     <div *ngFor="let item of items">
       <div class="card bg-dark">
       <h3>{{item.data.title}}</h3>

@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { MarkdownModule } from 'ngx-markdown';
-import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 
 @Component({
   selector: 'app-root',

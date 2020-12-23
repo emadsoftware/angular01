@@ -7,11 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
 import { ChartsModule } from 'ng2-charts';
 import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
+import { MyBarGraphComponent } from './my-bar-graph/my-bar-graph.component';
+import { MyDoughnutGraphComponent } from './my-doughnut-graph/my-doughnut-graph.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyLineChartComponent
+    MyLineChartComponent,
+    MyBarGraphComponent,
+    MyDoughnutGraphComponent
   ],
   imports: [
     BrowserModule,

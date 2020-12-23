@@ -11,7 +11,7 @@ body {
     word-wrap: break-word;
 }
 
-h1{
+h1 {
     color: rgb(190, 190, 190);
     font-size: 1.7rem;
     font-weight: 500;
@@ -19,27 +19,30 @@ h1{
     width: fit-content;
     padding: .5rem;
 }
-h2,h3,h4,h5,h6{
+
+h2,h3,h4,h5,h6 {
     font-size:1.5rem;
 }
 
-.card{
+.card {
     margin: 1rem;
     /* padding: 1rem 14rem; */
     padding: 1rem;
     border-radius: 1rem;
 }
 
-app-my-line-chart{
-    display: flex;
+app-my-line-chart, app-my-bar-graph, app-my-doughnut-graph {
+    display: inline-block;
+    width: 30%;
 }
 
-app-my-line-chart > div {
-    width: 50%;
+app-my-line-chart > div, app-my-bar-graph > div, app-my-doughnut-graph > div {
+    display: block;
+    width: 90%;
 }
+
 canvas.chartjs-render-monitor {
-    width: 100% !important;
-    height: auto !important;
+    
 }
 
 .bg-dark {
