@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'Basic Data Visualization App V.1';
-  url = 'https://www.reddit.com/r/webdev/.json?limit=1';
+  url = 'https://www.reddit.com/r/webdev/.json?limit=50';
   items = [];
   
   constructor(private http: HttpClient){

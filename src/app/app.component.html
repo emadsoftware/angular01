@@ -25,7 +25,7 @@
     <div *ngFor="let item of items">
       <div class="card bg-dark">
       <h3>{{item.data.title}}</h3>
-      <p markdown>{{item.data.selftext == '' ? '[Image/video hidden]' : item.data.selftext}}</p>
+      <p markdown>{{item.data.selftext == '' ? '[Image/video hidden]' : item.data.selftext | slice:0:600}} {{item.data.selftext.length > 600? '...' : ''}}</p>
       <p>Upvotes: {{item.data.ups}} Upvote Ratio: {{item.data.upvote_ratio}} Comments: {{item.data.num_comments}}</p>
     </div></div>
     <!-- <script src="" async defer></script> -->
