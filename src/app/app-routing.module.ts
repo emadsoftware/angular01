@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Input } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MyLineChartComponent } from './my-line-chart/my-line-chart.component';
 import { AppComponent } from './app.component';

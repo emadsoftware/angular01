@@ -19,7 +19,7 @@
     <h1>{{ title }}</h1>   
     <div class="graph-containers">
       <router-outlet></router-outlet>
-      <router-outlet name='secondary'></router-outlet>
+      <router-outlet name='secondary' (activate)="onOutletLoaded($event)"></router-outlet>
       <router-outlet name='tertiary'></router-outlet>
     </div>
     <div *ngFor="let item of items">
